@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const dataSchemaStudent = mongoose.Schema({
-  ImgProfile: {
-    type: String,
-    required: true,
-  },
+  //ImgProfile: {
+   // type: String,
+   // required: true,
+  //},
   Nombres: {
     type: String,
     required: true,
@@ -13,9 +13,8 @@ const dataSchemaStudent = mongoose.Schema({
     type: String,
     required: true,
   },
-
   Fec_Nac: {
-    type: Number,
+    type: String,
     required: true,
   },
   Email: {
@@ -32,4 +31,4 @@ const dataSchemaStudent = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('data',dataSchemaStudent);
+module.exports = mongoose.model('Student', dataSchemaStudent);

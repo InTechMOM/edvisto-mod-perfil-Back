@@ -2,4 +2,30 @@
 POST http://localhost:8000/api/formstudent HTTP/1.1
 Content-Type:application/json
 
-{}
+{
+    "Nombres":"Angie",
+    "Apellidos":"Reyes",
+    "Fec_Nac":"09-Agosto-1993",  
+    "Email":"AngieR@gmail.com",
+    "Residencia": "Colombiana",
+    "NEd":"Profesional"
+}
+
+###
+GET http://localhost:8000/api/formstudent/6536c8ffe07c24d0ba9e8eee HTTP/1.1
+Content-Type:application/json
+
+
+###
+PUT http://localhost:8000/api/formstudent/654055748a885581d7260a9c HTTP/1.1
+Content-Type: application/json 
+
+{
+    "Nombres":"Angie Natalia",
+    "Apellidos":"Reyes",
+    "Fec_Nac":"09-Agosto-1993",  
+    "Email":"AngieR@gmail.com",
+    "Residencia": "Colombiana",
+    "NEd":"Profesional"
+}
+

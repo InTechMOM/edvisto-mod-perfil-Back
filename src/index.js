@@ -7,7 +7,9 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 //middleware
+app.use(express.json());
 app.use("/api", studentsRoutes);
+
 
 //routes
 app.get("/", (req, res) => res.send("Welcome to my Api"));
