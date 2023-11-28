@@ -1,0 +1,39 @@
+{
+  "name": "mvp",
+  "version": "2.0.0",
+  "description": "Platform that allows the student leader and the members of a group to upload videos online, fulfilling the assigned missions of the different subjects and the teacher can provide feedback by commenting on the video at a certain time of playback and then rating it.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angie Reyes",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InTechMOM/edvisto-mod-feed-Back"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "hhttps://github.com/InTechMOM/edvisto-mod-feed-Back/issues"
+  },
+  "homepage": "https://github.com/InTechMOM/edvisto-mod-feed-Back#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "@joi/date": "^2.1.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "mongoose": "^7.6.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  }
+}
