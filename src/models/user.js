@@ -10,8 +10,8 @@ const valuesSecurityQuestions = ["Nombre de tu mascota", "Animal favorito", "Nom
 const userSchema = new Schema({
   name: {
     type:String,
-    minlength:[7,"La cadena es más corta de la requerida"],
-    maxlength:50
+    minlength:[3,"La cadena es más corta de la requerida"],
+    maxlength:50,
   },
   lastName: {
     type:String,
@@ -19,9 +19,9 @@ const userSchema = new Schema({
     maxlength:50
   },
   birthdayDate: {
-    type:SchemaTypes.Date, // Almacena la fecha en formato YYYY-MM-DD
-    get: date => date.toISOString().split('T')[0], // Esto obtiene la fecha en formato YYYY-MM-DD
-    set: date => new Date(date) // Esto asegura que siempre se almacene como una fecha
+    type:SchemaTypes.Date, 
+    get: date => date.toISOString().split('T')[0], 
+    set: date => new Date(date) 
   },
   email: {
     type:String,
@@ -42,7 +42,7 @@ const userSchema = new Schema({
     minOfNumeric:1, 
     noWhiteSpaces:0, 
     minOfSpecialCharacters:1, 
-    match: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).*$/, //validaciones para evitar inserción a la bd, no para usuario
+    match: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).*$/, 
   },
   password2: {
     type:String,
@@ -53,7 +53,7 @@ const userSchema = new Schema({
     minOfNumeric:1, 
     noWhiteSpaces:0, 
     minOfSpecialCharacters:1, 
-    match: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).*$/, //validaciones para evitar inserción a la bd, no para usuario
+    match: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).*$/, 
   },
   securityQuestion:{
     type:String,
@@ -79,7 +79,7 @@ const userSchema = new Schema({
     type:String,
     enum:{
       values: valuesCourse,message:"Opción no valida"}
-  },  
+  },
   acceptedTerms: {
     type: Boolean
   },
@@ -93,9 +93,6 @@ const userSchema = new Schema({
   },
   uid: {
     type: String
-  },
-  course: {
-    type:String
   }
 },
 {

@@ -10,7 +10,7 @@ const valuesCountry=[
 
 // Esquema Modificación de perfil
 const schemaProfile = Joi.object ({
-  name: Joi.string().min(7).max(50).strict().required(),
+  name: Joi.string().min(3).max(50).strict().required(),
   lastName: Joi.string().min(3).max(50).strict().required(),
   birthdayDate: extendedJoi.date().format("DD-MM-YYYY").required(),
   course: Joi.string().valid(...valuesCourse).required(),

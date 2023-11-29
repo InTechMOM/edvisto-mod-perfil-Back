@@ -47,7 +47,7 @@
 
 /**
  * @openapi
- * /api/profile/{id}:
+ * /api/profiles/{id}:
  *  patch:
  *   summary: The following route updates the profile created by the user.
  *   tags: [UserSchema]

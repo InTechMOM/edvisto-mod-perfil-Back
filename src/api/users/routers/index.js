@@ -5,7 +5,7 @@ import profile from "../controllers/patch.js";
 import allUsers from "../controllers/get.js";
 
 //Actulización del usuario
-usersRouter.patch("/profile/:id", profile);
+usersRouter.patch("/profiles/:id", profile);
 
 //Listar todos los usuarios
 usersRouter.get("/users", allUsers); 
