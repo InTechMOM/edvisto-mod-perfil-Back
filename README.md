@@ -46,7 +46,6 @@
   <summary>Tabla de contenido</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Acerca del proyecto</a>
       <ul>
         <li><a href="#functionalities">Funcionalidades</a></li>
         <li><a href="#database">Base de datos y almacenamiento de datos</a></li>
@@ -70,17 +69,11 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-## Acerca del Proyecto
-
-El módulo "Perfil" es parte de la plataforma educativa, EdVisto. Este módulo se enfoca en brindar a los usuarios la posibilidad de actualizar sus datos de usuario e incorporar nuevos al registro ya creado.
-
 <!-- FUNTIONALITIES -->
 ### Funcionalidades
 
 **Actualización del perfil de usuario:**
-
-![Product Name Screen Shot][product-screenshot1]
+El módulo "Perfil" es parte de la plataforma educativa, EdVisto. Este módulo se enfoca en brindar a los usuarios la posibilidad de actualizar sus datos de usuario e incorporar nuevos al registro ya creado.
 
 <!-- DATABASE -->
 
@@ -240,4 +233,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-url]: https://github.com/Angiedylexx/edvisto-mod-perfil-Back/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/carolinarbackendingenieriamecanica/
-[product-screenshot1]: images/perfil.png
