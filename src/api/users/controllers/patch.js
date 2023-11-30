@@ -3,18 +3,15 @@ import schemaProfile from "./validation.js";
 import partsDate from "../../utils/date.js"
 import isValidObjectId from "../../utils/valid.js"
 
-//Registro 
 const profile = async (request, response, next) => { 
 
   try { 
       
-    //Lectura de datos
     const { name, lastName, birthdayDate, course, country} = request.body;
     const id = request.params.id
 
     isValidObjectId(id);
 
-    //Validación de datos
     const {error} = schemaProfile.validate(request.body);
     if (error) { 
       return response.status(422).json({error: error.details[0].message}) 
