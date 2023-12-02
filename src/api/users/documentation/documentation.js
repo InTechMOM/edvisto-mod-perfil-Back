@@ -132,3 +132,39 @@
  *    500:
  *     description: Unknown error 
  */
+
+
+// API GET
+
+/**
+ * @openapi
+ * /api/users/{id}:
+ *  get:
+ *   summary: Return a user
+ *   tags: [UserSchema]
+ *   parameters:
+ *    - in: path
+ *      name: id
+ *      schema:
+ *        type: string
+ *      required: true
+ *      description: The user id
+ *   responses:
+ *    200:
+ *     description: User
+ *     content:
+ *      application/json:
+ *       schema:
+ *        type: object
+ *        items:
+ *         $ref: '#/components/schemas/UserSchema'
+ *    400:
+ *     description: Something went wrong
+ *    404:
+ *     description: User Not Found
+ *    422:
+ *     description: Id Not Valid
+ *    500:
+ *     description: Unknown error 
+ */
+ 
